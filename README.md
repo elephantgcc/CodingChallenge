@@ -5,9 +5,9 @@ http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code/Sliding-window_par
 
 Brief usage:
 ============
-make
-./NaiveTagger -r < example_morph_analysis > example_morph_analysis.tagged
-./NaiveReformatter < example_morph_analysis.tagged > example_morph_analysis.tagged.reformatted
+    make
+    ./NaiveTagger -r < example_morph_analysis > example_morph_analysis.tagged
+    ./NaiveReformatter < example_morph_analysis.tagged > example_morph_analysis.tagged.reformatted
 
 
 Detailed descriptions:
