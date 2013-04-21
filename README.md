@@ -15,7 +15,7 @@ Detailed descriptions:
 The coding challenge is implemented in two C++ binaries:
 NaiveTagger and NaiveReformatter.
 
-1. NaiveTagger
+(1) NaiveTagger
 The task is to write a filter that reads in the output of Apertium morphological
 analyser and writes out either a random one (-r) or the first one (-f) of the 
 lexical form for each surface form in a new format, respecting superblanks.
@@ -38,7 +38,7 @@ with example_morph_analysis.tagged's content being:
     I.num.mf.sg have.vbhaver.pres see.vblex.pp prpers.prn.subj.p3.nt.sg ..sent
 
 
-2. NaiveReformatter
+(2) NaiveReformatter
 The task is to provide a roundtrip converter reading the output of a lexical form and regenerating the input.
 The NaiveReformatter reads example_morph_analysis.tagged and outputs the morphological form:
 
@@ -49,7 +49,7 @@ with example_morph_analysis.tagged.reformatted's content being:
     ^I<num><mf><sg>$ ^have<vblex><pres>$ ^see<vblex><pp>$ ^prpers<prn><subj><p3><nt><sg>$ ^.<sent>$
 
 
-3. Test both binaries in a roundtrip pipeline
+(3) Test both binaries in a roundtrip pipeline
 The procedure is: sentence --> morphological form  ----> lexical form  ----> morphological form  ----> sentence
 using the command:
 
