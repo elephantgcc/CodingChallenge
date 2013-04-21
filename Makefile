@@ -1,7 +1,7 @@
 all: tagger reformatter
 
 tagger: NaiveTagger.cpp 
-  g++ NaiveTagger.cpp -o NaiveTagger
+	g++ NaiveTagger.cpp -o NaiveTagger
 
 reformatter: NaiveReformatter.cpp
 	g++ NaiveReformatter.cpp -o NaiveReformatter
