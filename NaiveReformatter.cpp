@@ -57,7 +57,7 @@ int main(int argc, char * argv[]) {
              << "usage: exe < input > output";
     } else {
         cerr << "error: invalid cmd/option!\n"
-             << "try `exe -h or --help' for more information.\n";
+             << "try `./NaiveReformatter -h or --help' for more information.\n";
         exit(1);
     }
 }
