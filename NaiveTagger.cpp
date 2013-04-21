@@ -88,7 +88,7 @@ int main(int argc, char * argv[]) {
              << "       exe -r, output a random morphological analysis for each word.\n";
     } else {
         cerr << "error: invalid cmd/option!\n"
-             << "try `exe -h or --help' for more information.\n";
+             << "try `./NaiveTagger -h or --help' for more information.\n";
         exit(1);
     }
 }
