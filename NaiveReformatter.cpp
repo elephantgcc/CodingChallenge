@@ -24,11 +24,13 @@ void revert() {
     string word;
     while (getline(cin, line)) {
         cout << "^";
-        bool first_dot_flag = true;
+        bool first_dot_flag = true; // used to indecate whether output "<" or "><"
         for (size_t i = 0 ; i < line.size(); ++i) {
             if (line[i] == '.') {
                 if (first_dot_flag) {
                     if ( (i + 1 < line.size()) && line[i + 1] == '.') {
+                        // the input use '.' as delimiter,
+                        // so period should be dealed specially
                         cout << '.';
                     } else {
                         cout << "<";
